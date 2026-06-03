@@ -10,11 +10,18 @@
 ## ------------------------------------
 ## supabase: pip install flask supabase
 ## ------------------------------------
+## dotenv: pip install python-dotenv
+## ------------------------------------
+import os 
+import supabase 
+import dotenv;
+
+dotenv.load_dotenv()
 
 class Conexao:
-    def __init__(self, host, port, user, password, database):
-        self.host = host
-        self.port = port
-        self.user = user
-        self.password = password
-        self.database = database
+    def __init__(self,):
+        self.client = supabase.create_client(
+            os.getenv("SUPABASE_URL"),
+            os.getenv("SUPABASE_KEY")
+        )
+conexao = Conexao()
