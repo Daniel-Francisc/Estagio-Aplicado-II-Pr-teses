@@ -14,7 +14,7 @@
 ## ------------------------------------
 import os 
 import supabase 
-import dotenv;
+import dotenv
 
 dotenv.load_dotenv()
 
