@@ -1,7 +1,11 @@
 import postgres from 'postgres';
 
 class Conexao {
-    const conexao = () => {
+    async function conexao() {
+      try {
         
-    }
+      } catch (error) {
+        
+      }  
+    } 
 }

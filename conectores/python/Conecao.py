@@ -25,3 +25,7 @@ class Conexao:
             os.getenv("SUPABASE_KEY")
         )
 conexao = Conexao()
+
+resultado = (conexao.client.table("tb_tipo_usuario").select("*").execute())
+print(resultado.data)
+
