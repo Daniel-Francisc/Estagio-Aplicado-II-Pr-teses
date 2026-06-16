@@ -3,7 +3,7 @@ import React from 'react';
 function Login() {
     return (
         <main style={style.main}>
-            <h1>Login</h1>
+            <h5 style={style.textos}>Login</h5>
             <div style={style.blocos}>
                 <input id={'nome'} type="email" />
             </div>
@@ -33,6 +33,9 @@ const style = {
         display: 'flex',
         justifyContent: 'center'
     },
+    textos: {
+        textTransform: 'uppercase'
+    }
 };
 
 export default Login;
