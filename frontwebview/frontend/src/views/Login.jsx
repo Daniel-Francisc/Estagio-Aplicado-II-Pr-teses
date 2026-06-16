@@ -2,24 +2,36 @@ import React from 'react';
 
 function Login() {
     return (
-        <div style={{
-            display: "flex",
-            backgroundColor: "red"
-        }}>
+        <main style={style.main}>
             <h1>Login</h1>
-            <input id={'nome'} type='email' />
-            <input id={'senha'} type='password' />
-            <input id={'manter_login'} type='checkbox' />
-            <input id={'entrar'} type='button' />
-            <input id={'recuperar_senha'} type='button' />
-            <a id={'recuperar_senha'} >recuperar senha</a>
-        </div>
+            <div style={style.blocos}>
+                <input id={'nome'} type="email" />
+            </div>
+            <div style={style.blocos}>
+                <input id={'senha'} type="password" />
+            </div>
+            <div style={style.blocos}>
+                <input id={'manter_login'} type="checkbox" />
+            </div>
+            <div style={style.blocos}>
+                <button id={'entrar'}> Acessar </button>
+            </div>
+            <div style={style.blocos}>
+                <button id={'criar_conta'}> Criar Conta </button>
+            </div>
+            <a id={'recuperar_senha'}>recuperar senha</a>
+        </main>
     );
 }
 
-const styles = {
-    container: {
-        textAlign: 'center',
+const style = {
+    main: {
+        display: 'grid',
+        justifyContent: 'center'
+    },
+    blocos: {
+        display: 'flex',
+        justifyContent: 'center'
     },
 };
 
