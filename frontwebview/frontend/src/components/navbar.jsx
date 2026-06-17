@@ -5,23 +5,23 @@ import React from 'react';
 // import Container from 'react-bootstrap/Container';
 
 function Navbar() {
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
 } return (
     <header>
         <div>
             {/* Superior */}
             <div>
-                <text >Logo</text>
-                <button >Entrar</button>
+                <a>Logo</a>
+                <button onClick={navigate('/login')}>Entrar</button>
             </div>
         </div>
         <div>
             {/* inferior */}
-            <a>Home</a>
-            <a>Educação</a>
-            <a>notícias</a>
-            <a>Quem Somos</a>
+            <a href='/'>Home</a>
+            <a href='/educacao'>Educação</a>
+            <a href='/noticias'>notícias</a>
+            <a href='/quemsomos'>Quem Somos</a>
         </div>
     </header>
 );
