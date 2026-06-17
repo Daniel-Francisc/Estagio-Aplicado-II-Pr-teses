@@ -1,10 +1,12 @@
 import React from 'react';
+import Navbar from '../../components/navbar';
 
 function Homepage() {
     return (
-        <div>
-
-        </div>
+        <main>
+            <Navbar />
+            <text>testando</text>
+        </main>
     );
 }
 
