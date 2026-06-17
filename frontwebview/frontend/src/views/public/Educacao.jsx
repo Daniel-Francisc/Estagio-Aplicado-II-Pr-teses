@@ -1,10 +1,10 @@
 import React from 'react';
-import Navbar from '../../components/navbar';
+import { Navbar } from '../../components/navbar';
 
 function Educacao() {
     return (
         <main>
-            <Navbar/>
+            <Navbar />
 
         </main>
     );

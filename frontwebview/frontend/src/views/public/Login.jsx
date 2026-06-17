@@ -23,7 +23,7 @@ function Login() {
                 <div style={style.blocos}>
                     <button id={'criar_conta'}> Criar Conta </button>
                 </div>
-                <a id={'recuperar_senha'} href='#'>recuperar senha</a>
+                <a id={'recuperar_senha'} href='/recuperarsenha'>recuperar senha</a>
             </div>
         </main>
     );
@@ -36,12 +36,12 @@ const style = {
         alignItems: 'center',
         height:'100vh',
         margin:0,
-        backgroundColor:'#2c2c2c'
+        // backgroundColor:'#2c2c2c'
     },
     display: {
         display: 'grid',
-        width: '200px',
-        height: '200px',
+        // width: '200px',
+        // height: '200px',
         backgroundColor:'#fff'
     },
     blocos: {

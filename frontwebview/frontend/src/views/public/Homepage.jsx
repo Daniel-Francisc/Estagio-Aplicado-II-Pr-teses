@@ -1,11 +1,11 @@
 import React from 'react';
-import Navbar from '../../components/navbar';
+import { Navbar } from '../../components/navbar';
 
 function Homepage() {
     return (
         <main>
             <Navbar />
-            <text>testando</text>
+            <text>testando em homepage</text>
         </main>
     );
 }
