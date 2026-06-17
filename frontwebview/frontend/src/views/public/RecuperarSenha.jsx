@@ -1,10 +1,13 @@
 import React from 'react';
 import { InputMask } from 'primereact/inputmask';
 import { FloatLabel } from 'primereact/floatlabel';
+import { NavLogin } from '../../components/NavLogin';
 
 function RecuperarSenha() {
     return (
         <div style={styles.container}>
+            <NavLogin />
+
             <FloatLabel>
                 <InputMask placeholder="Digite seu nome" id='nome' type='text' />
                 <label htmlFor="nome">Nome</label>

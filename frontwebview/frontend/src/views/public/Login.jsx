@@ -1,8 +1,11 @@
 import React from 'react';
+import { NavLogin } from '../../components/NavLogin';
 
 function Login() {
     return (
         <main style={style.main}>
+            <NavLogin />
+
             <div style={style.display}>
                 <h5 style={style.textos}>Login</h5>
                 <div style={style.blocos}>
@@ -32,17 +35,17 @@ function Login() {
 const style = {
     main: {
         display: 'grid',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height:'100vh',
-        margin:0,
+        height: '100vh',
+        margin: 0,
         // backgroundColor:'#2c2c2c'
     },
     display: {
         display: 'grid',
+        justifyContent: 'center',
+        alignItems: 'center',
         // width: '200px',
         // height: '200px',
-        backgroundColor:'#fff'
+        backgroundColor: '#fff'
     },
     blocos: {
         display: 'flex',
