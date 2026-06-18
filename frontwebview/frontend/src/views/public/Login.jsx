@@ -1,7 +1,10 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
+
 import { NavLogin } from '../../components/NavLogin';
 
 function Login() {
+    const navigate = useNavigate();
     return (
         <main style={style.main}>
             <NavLogin />
@@ -21,10 +24,10 @@ function Login() {
                     <input id={'manter_login'} type="checkbox" />
                 </div>
                 <div style={style.blocos}>
-                    <button id={'entrar'}> Acessar </button>
+                    <button id={'entrar'} onClick={() => (navigate('/cadastrar'))}> Acessar </button>
                 </div>
                 <div style={style.blocos}>
-                    <button id={'criar_conta'}> Criar Conta </button>
+                    <button id={'criar_conta'} onClick={() => (navigate('/cadastrar'))}> Criar Conta </button>
                 </div>
                 <a id={'recuperar_senha'} href='/recuperarsenha'>recuperar senha</a>
             </div>
