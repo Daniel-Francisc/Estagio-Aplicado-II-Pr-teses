@@ -1,13 +1,10 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 
-// import FontAwesome from '@expo/vector-icons/FontAwesome';
-// import Container from 'react-bootstrap/Container';
-
 export const NavLogin = () => {
     const navigate = useNavigate();
     return (
-        <header>
+        <header style={style.header}>
             <div>
                 {/* Superior */}
                 <div>
@@ -18,4 +15,14 @@ export const NavLogin = () => {
         </header>
     );
 }
-// export default Navbar;
+
+const style = {
+    header: {
+        position:'absolute',
+        top:0,
+        width: '100%',
+        padding: "15px",
+        backgroundColor: "white",
+        boxShadow: "0 0 20px #00000080",
+    }
+}
