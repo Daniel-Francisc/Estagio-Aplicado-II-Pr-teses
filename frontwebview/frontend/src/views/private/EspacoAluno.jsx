@@ -1,10 +1,10 @@
 import React from 'react';
+import { NavAluno } from '../../components/NavAluno';
 
 function EspacoAluno() {
     return (
         <main>
-            <Navbar/>
-
+            <NavAluno />
         </main>
     );
 }

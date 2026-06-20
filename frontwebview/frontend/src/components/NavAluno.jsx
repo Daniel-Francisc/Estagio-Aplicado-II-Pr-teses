@@ -15,4 +15,3 @@ export const NavAluno = () => {
         </header>
     );
 }
-// export default Navbar;

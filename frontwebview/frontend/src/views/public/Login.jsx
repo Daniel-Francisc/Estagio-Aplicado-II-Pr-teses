@@ -12,10 +12,10 @@ function Login() {
             <main >
                 <form action="">
                     <div style={style.display}>
-                        <h5 style={style.textos}>Login</h5>
+                        <h4 style={style.textos}>Login</h4><br />
                         <div style={style.blocos}>
-                            <label htmlFor="nome">Nome</label><br />
-                            <input id={'nome'} type="email" />
+                            <label htmlFor="email">Email</label><br />
+                            <input id={'email'} type="email" />
                         </div>
                         <div style={style.blocos}>
                             <label htmlFor="senha">senha</label><br />
