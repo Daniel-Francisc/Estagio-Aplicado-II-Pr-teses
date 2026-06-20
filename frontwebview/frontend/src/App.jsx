@@ -10,6 +10,7 @@ import RecuperarSenha from './views/public/RecuperarSenha.jsx';
 import Cursos from './views/private/Cursos.jsx';
 import EspacoAluno from './views/private/EspacoAluno.jsx';
 import Trilhas from './views/private/Trilha.jsx'
+import HomepageAluno from './views/private/HomepageAluno.jsx'
 
 export default function App() {
     return (
@@ -26,6 +27,7 @@ export default function App() {
                 <Route path="/cursos" element={<Cursos />} />
                 <Route path="/espacoaluno" element={<EspacoAluno />} />
                 <Route path="/trilhas" element={<Trilhas />} />
+                <Route path="/meuscursos" element={<HomepageAluno />} />
                 {/*Rotas Privada */}
             </Routes>
         </Router >

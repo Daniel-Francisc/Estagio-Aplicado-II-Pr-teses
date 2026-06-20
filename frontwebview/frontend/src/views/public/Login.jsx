@@ -24,7 +24,7 @@ function Login() {
                     <input id={'manter_login'} type="checkbox" />
                 </div>
                 <div style={style.blocos}>
-                    <button id={'entrar'} onClick={() => (navigate('/cadastrar'))}> Acessar </button>
+                    <button id={'entrar'} onClick={() => (navigate('/meuscursos'))}> Acessar </button>
                 </div>
                 <div style={style.blocos}>
                     <button id={'criar_conta'} onClick={() => (navigate('/cadastrar'))}> Criar Conta </button>
