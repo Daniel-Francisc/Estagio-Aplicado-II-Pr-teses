@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 // import FontAwesome from '@expo/vector-icons/FontAwesome';
 // import Container from 'react-bootstrap/Container';
@@ -16,10 +16,10 @@ export const Navbar = () => {
             </div>
             <div style={style.inferior}>
                 {/* inferior */}
-                <a href='/'>Home</a>
-                <a href='/educacao'>Educação</a>
-                <a href='/noticias'>notícias</a>
-                <a href='/quemsomos'>Quem Somos</a>
+                <Link to='/'>Home</Link>
+                <Link to='/educacao'>Educação</Link>
+                <Link to='/noticias'>notícias</Link>
+                <Link to='/quemsomos'>Quem Somos</Link>
             </div>
         </header>
     );
