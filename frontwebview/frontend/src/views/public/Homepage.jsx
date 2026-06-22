@@ -3,15 +3,17 @@ import { Navbar } from '../../components/navbar';
 
 function Homepage() {
     return (
-        <main>
+        <div>
             <Navbar />
-            <text>testando em homepage</text>
-        </main>
+            <main>
+                <text>testando em homepage</text>
+            </main>
+        </div>
     );
 }
 
 const styles = {
-    container: {
+    body: {
         textAlign: 'center',
     },
 };

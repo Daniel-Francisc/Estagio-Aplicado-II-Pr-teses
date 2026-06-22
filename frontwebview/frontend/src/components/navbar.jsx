@@ -30,12 +30,13 @@ const style = {
         width: '100%',
         height: '20%',
         padding: '20px',
+        boxShadow: "0 0 20px #00000080",
     },
     superior: {
         display:'grid',
         gridTemplateColumns:'1fr auto 1fr',
         padding: '20px',
-        backgroundColor:'red',
+        // backgroundColor:'red',
     },
     inferior: {
         display: 'flex',
