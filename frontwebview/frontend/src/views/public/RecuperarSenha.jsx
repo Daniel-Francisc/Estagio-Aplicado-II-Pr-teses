@@ -13,7 +13,7 @@ function RecuperarSenha() {
         <BackgroundSlideshow>
             <NavLogin />
             <main >
-                <form action="">
+                <form action={() => { navigate('/login') }} method='POST'>
                     <div style={style.display}>
                         <h4 style={style.textos}>recuperar senha</h4><br />
 
@@ -25,8 +25,8 @@ function RecuperarSenha() {
                             <InputMask mask='999.999.999-99' placeholder="xxx.xxx.xxx-xx" id='cpf' type='email' />
                             <label htmlFor="cpf">CPF</label>
                         </FloatLabel>
-                        <button id='RedefinirSenha'>Redefinir Senha</button>
-                        <button id='Voltar'>Voltar para Login</button>
+                        <button id='RedefinirSenha' type='submit' >Redefinir Senha</button> <br />
+                        <button id='Voltar' type='buttom' onClick={navigate('/login')}>Voltar para Login</button>
                     </div>
                 </form>
             </main>

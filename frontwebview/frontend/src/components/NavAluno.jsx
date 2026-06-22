@@ -8,7 +8,7 @@ export const NavAluno = () => {
             <div>
                 {/* Superior */}
                 <div>
-                    <button type='button' onClick={() => (navigate('/'))}>Voltar</button>{/* Não vai ser texto, apenas o icone */}
+                    <button type='button' onClick={() => (navigate(-1))}>Voltar</button>{/* Não vai ser texto, apenas o icone */}
                     <a>Logo</a>
                 </div>
             </div>

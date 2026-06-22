@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavAluno } from '../../components/NavAluno';
 
-function MeusCursos() {
+function HomepageAluno() {
     return (
         <main>
             <NavAluno />
@@ -15,4 +15,4 @@ const styles = {
     },
 };
 
-export default MeusCursos;
+export default HomepageAluno;

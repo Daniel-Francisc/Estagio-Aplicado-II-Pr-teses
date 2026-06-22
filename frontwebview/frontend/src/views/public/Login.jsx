@@ -10,7 +10,7 @@ function Login() {
         <BackgroundSlideshow>
             <NavLogin />
             <main >
-                <form action="">
+                <form action={() => { navigate('/espacoaluno')}} method='POST'>
                     <div style={style.display}>
                         <h4 style={style.textos}>Login</h4><br />
                         <div style={style.blocos}>
@@ -22,10 +22,10 @@ function Login() {
                             <input id={'senha'} type="password" />
                         </div>
                         <div style={style.blocos}> <br />
-                            <button id={'entrar'} onClick={() => (navigate('/meuscursos'))}> Acessar </button>
+                            <button id={'entrar'} type='submit'> Acessar </button>
                         </div>
                         <div style={style.blocos}> <br />
-                            <button id={'criar_conta'} onClick={() => (navigate('/cadastrar'))}> Criar Conta </button>
+                            <button id={'criar_conta'} type='reset' onClick={() => (navigate('/cadastrar'))}> Criar Conta </button>
                         </div> <br />
                         <a id={'recuperar_senha'} href='/recuperarsenha'>recuperar senha</a>
                         <div style={style.blocos}>
@@ -41,7 +41,6 @@ function Login() {
 
 const style = {
     display: {
-        // display:'grid',
         width: "60%",
         maxWidth: '500px',
         minWidth: '300px',

@@ -8,8 +8,8 @@ export const NavLogin = () => {
             <div>
                 {/* Superior */}
                 <div>
-                    <button type='button' onClick={() => (navigate('/'))}>Voltar</button>{/* Não vai ser texto, apenas o icone */}
-                    <a>Logo</a>
+                    <button type='button' onClick={() => (navigate(-1))}>Voltar</button>{/* Não vai ter texto, apenas o icone */}
+                    <a href='/'>Logo</a>
                 </div>
             </div>
         </header>

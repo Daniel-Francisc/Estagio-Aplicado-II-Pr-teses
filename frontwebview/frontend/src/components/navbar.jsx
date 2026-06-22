@@ -7,15 +7,14 @@ import { useNavigate } from "react-router-dom";
 export const Navbar = () => {
     const navigate = useNavigate();
     return (
-        <header>
-            <div>
+        <header style={style.body}>
+            <div style={style.superior}>
                 {/* Superior */}
-                <div>
-                    <a>Logo</a>
-                    <button type='button' onClick={() => (navigate('/login'))}>Entrar</button>
-                </div>
+                <div></div>
+                <a>Logo</a>
+                <button type='button' onClick={() => (navigate('/login'))}>Entrar</button>
             </div>
-            <div>
+            <div style={style.inferior}>
                 {/* inferior */}
                 <a href='/'>Home</a>
                 <a href='/educacao'>Educação</a>
@@ -25,4 +24,22 @@ export const Navbar = () => {
         </header>
     );
 }
-// export default Navbar;
+
+const style = {
+    body: {
+        width: '100%',
+        height: '20%',
+        padding: '20px',
+    },
+    superior: {
+        display:'grid',
+        gridTemplateColumns:'1fr auto 1fr',
+        padding: '20px',
+        backgroundColor:'red',
+    },
+    inferior: {
+        display: 'flex',
+        justifyContent: 'space-around',
+        padding: '20px',
+    },
+}
