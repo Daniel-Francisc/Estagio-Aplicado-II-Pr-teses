@@ -18,7 +18,7 @@ export const Navbar = () => {
                 {/* inferior */}
                 <Link to='/'>Home</Link>
                 <Link to='/educacao'>Educação</Link>
-                <Link to='/noticias'>notícias</Link>
+                <Link to='/noticias'>Notícias</Link>
                 <Link to='/quemsomos'>Quem Somos</Link>
             </div>
         </header>
