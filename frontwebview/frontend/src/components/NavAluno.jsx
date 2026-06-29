@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 
 export const NavAluno = () => {
     const navigate = useNavigate();
+    const [isOpen,setIsOpen] =  useState(false);
     return (
         <header style={style.header}>
             {/* Superior */}
