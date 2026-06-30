@@ -17,6 +17,7 @@
     "primereact": "^10.9.8",
     "react-bootstrap": "^2.10.10",
     "react-router-dom": "^7.18.0",
-    "router": "^2.2.0"
+    "router": "^2.2.0",
+    "vector-icons": "^0.1.0"
   }
 }

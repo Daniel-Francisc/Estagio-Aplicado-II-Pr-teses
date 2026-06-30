@@ -1,9 +1,6 @@
 import React from 'react';
 import { useNavigate, Link } from "react-router-dom";
 
-// import FontAwesome from '@expo/vector-icons/FontAwesome';
-// import Container from 'react-bootstrap/Container';
-
 export const Navbar = () => {
     const navigate = useNavigate();
     return (
@@ -43,4 +40,7 @@ const style = {
         justifyContent: 'space-around',
         padding: '20px',
     },
+    link:{
+        
+    }
 }

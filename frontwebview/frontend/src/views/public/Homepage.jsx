@@ -26,13 +26,11 @@ function Homepage() {
         </div>)
     }
     return (
-        <div>
+        <div style={{ textTransform: 'capitalize' }}>
             <div style={styles.canvas}>
                 <Navbar />
-                <div>
-                    {/* Carrossel */}
-                    <Carousel value={imgs} numVisible={1} numScroll={1} itemTemplate={itemTemplate} autoplayInterval={5000} />
-                </div>
+                <p>Conhecimento que transforma vidas</p>
+                <p>descubra as inovações e os desafios das próteses internas em uma palestra imperdível</p>
             </div>
             <main style={styles.body}>
                 <text>
@@ -53,8 +51,7 @@ const styles = {
         margin: '3% 10%',
     },
     canvas: {
-        backgroundImage: 'linear-gradient(to bottom, #333551, #3e3c96)',
-
+        // backgroundImage: 'linear-gradient(to bottom, #333551, #3e3c96)',
     },
 };
 
